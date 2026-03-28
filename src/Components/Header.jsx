@@ -13,7 +13,7 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex justify-center text-[16px] font-medium rounded-[10px] transition-all duration-200 hover:text-white  hover:bg-[#38B1A1] text-black items-center gap-2 bg-[#F3F4F6] w-25 h-10">
+            <div className="cursor-pointer flex justify-center text-[16px] font-medium rounded-[10px] transition-all duration-200 hover:text-white  hover:bg-[#38B1A1] text-black items-center gap-2 bg-[#F3F4F6] w-25 h-10">
               <img
                 className="h-4 w-4 "
                 src="src/assets/refreshicon.png"
@@ -22,7 +22,7 @@ export default function Header() {
               <button>Refresh</button>
             </div>
 
-            <div className="flex justify-center text-[16px] font-medium rounded-[10px]  text-white  bg-[#38B1A1] items-center gap-2 w-36 h-10">
+            <div className="cursor-pointer flex justify-center text-[16px] font-medium rounded-[10px]  text-white  bg-[#38B1A1] items-center gap-2 w-36 h-10">
               <img className="h-7 w-7 " src="src/assets/add.png" alt="" />
               <button>Add Widget</button>
             </div>
