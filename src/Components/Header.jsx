@@ -1,5 +1,7 @@
 import React from "react";
-
+import refreshIcon from "../assets/refreshicon.png";
+import AddIcon from "../assets/add.png";
+import WidgetIcon from "../assets/Widget-icon.png";
 export default function Header() {
   return (
     <>
@@ -14,16 +16,12 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             <div className="cursor-pointer flex justify-center text-[16px] font-medium rounded-[10px] transition-all duration-200 hover:text-white  hover:bg-[#38B1A1] text-black items-center gap-2 bg-[#F3F4F6] w-25 h-10">
-              <img
-                className="h-4 w-4 "
-                src="src/assets/refreshicon.png"
-                alt=""
-              />
+              <img className="h-4 w-4 " src={refreshIcon} alt="" />
               <button>Refresh</button>
             </div>
 
             <div className="cursor-pointer flex justify-center text-[16px] font-medium rounded-[10px]  text-white  bg-[#38B1A1] items-center gap-2 w-36 h-10">
-              <img className="h-7 w-7 " src="src/assets/add.png" alt="" />
+              <img className="h-7 w-7 " src={AddIcon} alt="" />
               <button>Add Widget</button>
             </div>
           </div>
@@ -32,9 +30,9 @@ export default function Header() {
 
       {/* UI */}
 
-      <div className="h-screen flex flex-col justify-center items-center  gap-4">
+      <div className="h-[calc(100vh-64px)] flex flex-col justify-center items-center  gap-4">
         <div className="bg-[#EBE5E7] h-20 w-20 flex items-center justify-center rounded-[10px]">
-          <img className="h-12 w-12 " src="src/assets/Widget-icon.png" alt="" />
+          <img className="h-12 w-12 " src={WidgetIcon} alt="" />
         </div>
         <div>
           <h2 className="font-medium text-[20px] ">No widgets yet</h2>

@@ -1,4 +1,8 @@
 import React from "react";
+import SettingIcon from "../assets/setting.png";
+import RefreshIcon from "../assets/refreshicon.png";
+import DeleteIcon from "../assets/bin.png";
+import MyPic from "../assets/Mypics.jpg";
 export default function () {
   return (
     <>
@@ -16,28 +20,24 @@ export default function () {
             <div className="flex gap-3">
               <img
                 className="h-6 w-6 hover:bg-[#38B1A1] p-1 rounded-md"
-                src="src/assets/refreshicon.png"
+                src={RefreshIcon}
                 alt=""
               />
               <img
                 className="h-6 w-6 hover:bg-[#38B1A1] p-1 rounded-md"
-                src="src/assets/setting.png"
+                src={SettingIcon}
                 alt=""
               />
               <img
                 className="h-6 w-6 hover:bg-[#38B1A1] p-1 rounded-md"
-                src="src/assets/bin.png"
+                src={DeleteIcon}
                 alt=""
               />
             </div>
           </div>
           <hr className="text-[#DCD1D5] pt-3" />
           <div className="flex justify-baseline gap-2 items-center mt-2">
-            <img
-              className="h-12 w-12 rounded-full"
-              src="src/assets/Mypics.jpg"
-              alt=""
-            />
+            <img className="h-12 w-12 rounded-full" src={MyPic} alt="" />
             <p className="text-[14px] font-[Inter,Poppins,sans-serif]">
               Syed-Saad1
             </p>

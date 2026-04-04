@@ -1,4 +1,5 @@
 import React from "react";
+import CloseIcon from "../assets/close.png";
 
 export default function ConfigureGitHub() {
   return (
@@ -9,11 +10,7 @@ export default function ConfigureGitHub() {
             <h1 className="text-[19px] font-[Inter,Poppins,sans-serif] font-medium text-[#000000]">
               Configure GitHub Profile
             </h1>
-            <img
-              className="h-4 w-4 cursor-pointer"
-              src="src/assets/close.png"
-              alt=""
-            />
+            <img className="h-4 w-4 cursor-pointer" src={CloseIcon} alt="" />
           </div>
 
           <div>
